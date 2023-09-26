@@ -1,4 +1,5 @@
 import { css } from "@/styled-system/css";
+import { flex } from "@/styled-system/patterns";
 
 
 /* ---------------------------
@@ -69,14 +70,6 @@ export const loginFormStyles = css({
     mb: '20px',
     
     display: 'flex',
-    flexDir: 'column',    
-});
-
-export const emailInputStyales = css({
-    w: '100%',
-    mb: '3rem',
-    
-    display: 'flex',
     flexDir: 'column',
-    justifyContent: 'stretch',
+    gap: 2,
 });
