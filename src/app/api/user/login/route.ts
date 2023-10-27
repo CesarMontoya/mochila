@@ -6,9 +6,7 @@ import { jwt } from '@/utils'
 
 export async function POST(request: Request) {
 
-  const formData = await request.formData();
-  const passwordReceived = formData.get('password')?.toString() || '';
-  const emailReceived = formData.get('email')?.toString() || '';
+  const { email: emailReceived, password: passwordReceived } = await request.json();
 
   await db.connect();
   const user = await User.findOne({ email: emailReceived });

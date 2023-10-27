@@ -6,11 +6,12 @@ import { jwt, validations } from "@/utils"
 
 export async function POST( request: Request ) {
 
-    const formData          = await request.formData()
-    const firstNameReceived = formData.get('firstName')?.toString() || ''
-    const lastNameReceived  = formData.get('lastName')?.toString() || ''
-    const passwordReceived  = formData.get('password')?.toString() || ''
-    const emailReceived     = formData.get('email')?.toString() || ''
+    const { 
+        firstName: firstNameReceived, 
+        lastName: lastNameReceived, 
+        password: passwordReceived,
+        email: emailReceived
+     } = await request.json()
 
     await db.connect()
 

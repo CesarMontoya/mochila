@@ -7,10 +7,9 @@ import { flex } from "@/styled-system/patterns";
 --------------------------- */
 
 export const loginStyles = css({
-    w: '2/3',
-    h: 'fit-content',
+    maxW: '30rem',
+    minH: 'fit-content',
     p: '15px 5px',
-    // bgColor: 'iron.50',
     borderWidth: '1px',
     borderRadius: 'xl',
     borderColor: 'ebony.300',
@@ -23,8 +22,8 @@ export const loginStyles = css({
 
 export const loginHedearStyles = css({
     w: '100%',
-    h: '2/5',
-    minH: 'fit-content',
+    h: '1/3',
+    maxH: '10rem',
     p: '5', 
     fontFamily: 'nunito',
     fontWeight: '400',
@@ -41,18 +40,18 @@ export const loginTitleStyles = css({
     lineHeight: '2rem',
 
     md: {
-        textStyle: '3xl',
+        textStyle: '2xl',
         lineHeight: '2.5rem',
     },
     lg: {
-        textStyle: '4xl',
-        lineHeight: '4rem',
+        textStyle: '3xl',
+        lineHeight: '3rem',
     }
 });
 
 export const loginBodyStyles = css({
     w: '100%',
-    h: '3/5',
+    h: '2/3',
     p: '5',
 
     display: 'flex',
@@ -73,3 +72,7 @@ export const loginFormStyles = css({
     flexDir: 'column',
     gap: 2,
 });
+
+export const invalidMessage = css({
+    mb: '30px !important',
+})

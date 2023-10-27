@@ -11,6 +11,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     src={ authImg } 
                     alt='mochila cree en el trabajo en equipo'
                     style={{ width: 'auto', height: '100%' }}
+                    priority
                 />
             </div>
             <div className={ loginPanelStyles }>{ children }</div>

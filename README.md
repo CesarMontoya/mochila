@@ -12,7 +12,7 @@ Rename __.env.template__ to __.env__
 
 ## MongoDB local URL
 ```
-MONGO_URL=mongodb://localhost:27017/mochiladb
+MONGO_URL=mongodb://localhost:27018/mochiladb
 ```
 
 ## Rebuild Node modules and run dev server

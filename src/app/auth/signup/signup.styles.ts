@@ -6,8 +6,7 @@ import { css } from "@/styled-system/css";
 --------------------------- */
 
 export const signupStyles = css({
-    w: '2/3',
-    h: 'fit-content',
+    maxW: '30rem',
     p: '15px 5px',
     borderWidth: '1px',
     borderRadius: 'xl',
@@ -22,7 +21,7 @@ export const signupStyles = css({
 export const signupHedearStyles = css({
     w: '100%',
     h: '1/3',
-    minH: 'fit-content',
+    maxH: '10rem',
     p: '5', 
     fontFamily: 'nunito',
     fontWeight: '400',
@@ -39,12 +38,12 @@ export const signupTitleStyles = css({
     lineHeight: '2rem',
 
     md: {
-        textStyle: '3xl',
+        textStyle: '2xl',
         lineHeight: '2.5rem',
     },
     lg: {
-        textStyle: '4xl',
-        lineHeight: '4rem',
+        textStyle: '3xl',
+        lineHeight: '3rem',
     }
 });
 
@@ -68,7 +67,8 @@ export const signupFormStyles = css({
     mb: '20px',
     
     display: 'flex',
-    flexDir: 'column',    
+    flexDir: 'column',
+    gap: 2,
 });
 
 export const emailInputStyales = css({

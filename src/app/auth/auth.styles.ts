@@ -7,30 +7,32 @@ export const authStyles = css({
     bgPosition: '100% 100%',
     bgSize: 'cover',
     bgColor: 'transparent',
+    overflow: 'hidden',
     display: 'flex',
     flexWrap: 'wrap',
     flexDir: 'column',
+
     md: { flexDir: 'column-reverse' },
     lg: { flexDir: 'row' }
 });
 
 export const fullImageStyles = css({
-    h: '35vh',
-    display: 'flex',
+    h: '0px',
+    display: 'none',
     alignItems: 'center',
     justifyContent: 'center',
-    md: { h: '31vh' },
     lg: { 
+        display: 'flex',
         w: '40vw',
         h: 'screen'
      }
 });
 
 export const loginPanelStyles = css({
-    h: '65vh',
+    h: '100vh',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    md: { h: '69vh' },
-    lg: { w: '60vw', h: '100%' }
+    lg: { w: '60vw' }
 });
+
